@@ -1,4 +1,5 @@
-# Discord Bot for Resumes / Internships &middot; [![Build Status](https://img.shields.io/travis/npm/npm/latest.svg?style=flat-square)](https://travis-ci.org/npm/npm) [![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/npm) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
+# Discord Bot for Resumes / Internships &middot; 
+[![Build Status](https://img.shields.io/travis/npm/npm/latest.svg?style=flat-square)](https://travis-ci.org/npm/npm) [![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/npm) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
 > Created for Intern Grind Discord Server
 
 This project creates a discord bot which moves resume files from a channel where users can post their resumes and comment on others to a channel containing only the resume PDFs in order to simplify finding resumes in the server. The project also sorts job postings from one chat channel into another channel to make the postings easier to view.
@@ -29,7 +30,7 @@ How to develop the project further:
 ```shell
 git clone https://www.github.com/arjundubey-cr/bot-discord
 cd bot-discord
-npm install
+yarn install
 ```
 
 And state what happens step-by-step. If there is any virtual environment, local server or database feeder needed, explain here.
