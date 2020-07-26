@@ -29,8 +29,12 @@ bot.on("message", (message) => {
   if (!message.content.startsWith(prefix) || message.author.bot) return;
 
   //seperates the arguments and the command from message
-  const args = message.content.slice(prefix.length).trim().split(/ +/);
+  const mess = message;
+  let args = message.content.slice(prefix.length).trim().split(/ +/);
   const commandName = args.shift().toLowerCase();
+  if (commandName == 'job') {
+    args = mess.content.slice(prefix.length).trim().split('|');
+  }
 
   //Checks if a particular command exist or not
   if (!bot.commands.has(commandName)) return;
