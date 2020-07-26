@@ -20,6 +20,8 @@ Here you should say what actually happens when you execute the code above.
 ### Built With
 Built with discord.js and Node.js
 
+Leetcode data file from https://github.com/SeanPrashad/leetcode-patterns/blob/master/src/data/index.js
+
 ### Prerequisites
 No prerequisites.
 
