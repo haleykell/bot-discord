@@ -64,3 +64,9 @@ bot.on("message", (message) => {
     message.reply("there was an error trying to execute that command!");
   }
 });
+
+// (async () => {
+//   await try
+// })();
+
+bot.login(token);
