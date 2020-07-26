@@ -1,10 +1,10 @@
 const { prefix } = require("../config.json");
 const data = [];
-const { commands } = message.client;
 module.exports = {
   name: "help",
   description: "display all the commands and their usage",
   execute(message, args) {
+    const { commands } = message.client;
     if (!args.length) {
       data.push("Here's a list of all my commands:");
       data.push(commands.map((command) => command.name).join(","));
