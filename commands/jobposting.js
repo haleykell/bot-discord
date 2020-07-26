@@ -6,10 +6,17 @@ module.exports = {
     description: "Job posting",
     args: true,
     execute(message, args) {
-        if (message.channel.name != job_channel) return;
         message.delete();
-        let company, title, level, description;
+        if (message.channel.name != job_channel) return;
+        let jobBoard = message.guild.channels.cache.get(job_board);
+        if (!jobBoard) {
+            message.channel.send(
+                `Sorry, it seems there is no job_board on this server ${message.author}, Go ahead and create one.`
+            );
+            return;
+        }
 
+        let company, title, level, description;
         let url = args[0].split(/ +/)[1];
 
         company = args[1];
@@ -29,9 +36,10 @@ module.exports = {
             .addField('Description', description)
             .setTimestamp();
 
-        let client = message.client;
-        client.channels.fetch(job_board)
-            .then(channel => channel.send(job))
-            .catch(console.error);
+        try {
+            jobBoard.send(job);
+        } catch (error) {
+            console.log(error);
+        }
     },
 };
