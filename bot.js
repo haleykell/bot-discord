@@ -32,8 +32,8 @@ bot.on("message", (message) => {
   const mess = message;
   let args = message.content.slice(prefix.length).trim().split(/ +/);
   const commandName = args.shift().toLowerCase();
-  if (commandName == 'job') {
-    args = mess.content.slice(prefix.length).trim().split('|');
+  if (commandName == "job") {
+    args = mess.content.slice(prefix.length).trim().split("|");
   }
 
   //Checks if a particular command exist or not
@@ -64,5 +64,3 @@ bot.on("message", (message) => {
     message.reply("there was an error trying to execute that command!");
   }
 });
-
-bot.login(token);
